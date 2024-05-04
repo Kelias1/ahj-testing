@@ -8,8 +8,8 @@ export default function checkLuhn(value) {
   for (let i = 0; i < num.length; i += 1) {
     let n = parseInt(num[i], 10);
 
-    ch += (isOdd || 0) === (i % 2) && (n *= 2) > 9 ? (n - 9) : n;
+    ch += (isOdd || 0) === i % 2 && (n *= 2) > 9 ? n - 9 : n;
   }
 
-  return (ch % 10) === 0;
+  return ch % 10 === 0;
 }

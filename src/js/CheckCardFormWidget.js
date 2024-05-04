@@ -1,4 +1,4 @@
-import ValidateForm from './ValidateForm';
+import ValidateForm from "./ValidateForm";
 
 export default class CheckCardFormWidget {
   constructor(parentEl) {
@@ -37,10 +37,10 @@ export default class CheckCardFormWidget {
   }
 
   static get inputSelector() {
-    return '.form-group__input';
+    return ".form-group__input";
   }
 
   static get submitSelector() {
-    return '.form-group__button';
+    return ".form-group__button";
   }
 }
